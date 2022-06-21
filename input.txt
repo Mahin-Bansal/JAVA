@@ -23,3 +23,71 @@ public class Solution {
 
 
 example ends...
+
+
+
+Question:
+Sample Input
+
+java 100
+cpp 65
+python 50
+Sample Output
+
+================================
+java           100 
+cpp            065 
+python         050 
+================================
+
+
+Solution code:
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String y ;
+                String s1=sc.next();
+                int x=sc.nextInt();
+                int k = 15-s1.length();
+                //Complete this line
+                if( 100 - x > 0){
+                    
+                    
+                    
+                    if( 10 - x > 0){
+                    
+                  System.out.printf(s1);    
+                  for(i=k;i>0;i--){
+                      System.out.printf(" ");
+                  }
+                  System.out.printf("0"+x+"0");
+                  System.out.printf("\n");
+                }else{
+                    System.out.printf(s1);    
+                  for(i=k;i>0;i--){
+                      System.out.printf(" ");
+                  }
+                  System.out.printf("0"+x);
+                  System.out.printf("\n");
+                }
+                    
+        
+                }else{
+                    System.out.printf(s1);    
+                  for(i=k;i>0;i--){
+                      System.out.printf(" ");
+                  }
+                  System.out.print(x);
+                  System.out.printf("\n");
+                }
+            }
+            System.out.println("================================");
+
+    }
+}
+
