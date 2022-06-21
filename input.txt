@@ -1,0 +1,25 @@
+For getting multiple inputs like a integer and a string ,before entering string write sc.nextLine.
+example:
+
+mport java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        double d = scan.nextDouble();
+        scan.nextLine() ;
+        String s = scan.nextLine();
+
+        // Write your code here.
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
+    }
+}
+
+
+
+example ends...
